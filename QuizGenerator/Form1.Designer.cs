@@ -1,4 +1,7 @@
-﻿namespace QuizGenerator
+﻿using System;
+using System.Windows.Forms;
+
+namespace QuizGenerator
 {
     partial class Form1
     {
@@ -28,7 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Setbutton1(new System.Windows.Forms.Button());
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
@@ -37,12 +40,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 192);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Getbutton1().Location = new System.Drawing.Point(12, 27);
+            this.Getbutton1().Name = "Generate";
+            this.Getbutton1().Size = new System.Drawing.Size(231, 192);
+            this.Getbutton1().TabIndex = 0;
+            this.Getbutton1().Text = "Generate";
+            this.Getbutton1().UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -84,7 +87,7 @@
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Getbutton1());
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -92,6 +95,16 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Setbutton1(Button button)
+        {
+            throw new NotImplementedException();
+        }
+
+        private object Getbutton1()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
